@@ -1,0 +1,134 @@
+@import './variables'
+
+.hero-slider
+    .hero-slide
+        min-height: 880px
+        padding-top: 113px
+        .slider-wrapper
+            // overflow: hidden
+        .slide-bg-img
+            z-index: 1
+            position: absolute
+            left: 0
+            top: 0
+            object-fit: cover
+            width: 100%
+            height: 100%
+        .fluid-overlay
+            z-index: 2
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-image: linear-gradient(to left,#00000018,#000)
+        .slide-content
+            position: absolute
+            width: 100%
+            display: flex
+            z-index: 3
+            margin-top: 60px
+            .work-banner h2
+                text-transform: uppercase
+                line-height: 1
+                padding: 1rem 0
+                font-weight: 900
+            .work-category
+                display: flex
+                align-items: center
+                span
+                    letter-spacing: 6px
+            .work-info
+                align-items: center
+                display: flex
+                .work-info-tag
+                    margin: .5rem 0
+                    padding-right: 1rem
+                    font-weight: 500
+                .age-class
+                    border: 2px solid $netflix-red
+                    text-align: center
+                    display: block
+                    border-radius: 1000px
+                    padding: .2rem 1rem
+                    margin-right: 1rem
+            .work-description,
+            .work-title
+                line-height: 1.5rem
+                max-height: 5rem
+                overflow: hidden
+                -webkit-line-clamp: 3
+                display: box
+                display: -webkit-box
+                -webkit-box-orient: vertical
+                text-overflow: ellipsis
+                white-space: normal
+            .work-actions-btns
+                .btn
+                    background: $netflix-red
+                    color: $netflix-white
+                    border-radius: 1000px
+                    padding: 0.5rem 2rem
+                    text-transform: capitalize
+                    transition: .3s
+                    &:hover
+                        box-shadow: 1px 1px 10px $netflix-red
+                .info-link-btn
+                    color: $bg-color
+                    background: $netflix-white
+                    &:hover
+                        box-shadow: 1px 1px 10px $netflix-white
+    .swiper-button-prev,
+    .swiper-button-next
+        border-radius: 50%
+        top: 35%
+        transition: .2s
+        width: 40px
+        height: 40px
+        background: $netflix-red
+        color: $netflix-white
+        &::after
+            all: unset
+            background: $netflix-red
+            font-size: 20px
+            font-family: 'Font Awesome 5 Pro'
+            content: "\f053"
+        &:hover
+            box-shadow: 1px 1px 10px $netflix-red
+    .swiper-button-prev
+        left: 30px
+    .swiper-button-next
+        right: 30px
+        &::after
+            content: "\f054"
+    .swiper-pagination
+        margin: 1rem 0
+        
+        .swiper-pagination-bullet
+            border-radius: 0
+            height: 2px
+            width: 50px
+            background: $netflix-white
+        .swiper-pagination-bullet-active
+            height: 3px
+            background: $netflix-red
+
+@media screen and (max-width : 991px) 
+    .swiper-button-prev,
+    .swiper-button-next
+        display: none
+    .la-casa-banner
+        width: 300px
+
+    .squid_game_banner
+        width: 180px
+        margin: 1rem 0
+    .hero-slide
+        padding-top: 0px
+    .work-info
+        align-items: center
+        flex-wrap: wrap
+    .work-actions-btns
+        .btn
+            margin: .5rem .75rem .5rem 0 !important
+            padding: 0.4rem 1rem !important

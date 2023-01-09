@@ -1,0 +1,29 @@
+@import './variables'
+
+.grid
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 10001
+    #grid-btn
+        position: fixed
+        left: 0
+        top: 0
+        z-index: 2
+    #bs-grid
+        position: fixed
+        width: 100%
+        height: 100%
+        z-index: 1
+        .container 
+            height: 100%
+            .row 
+                height: 100%
+                .col div
+                    background: #0004ff1f
+                    height: 100%
+                    border-right: 1px solid #ff000044
+                    &:first-of-type
+                        border-left: 1px solid #ff000044
+            

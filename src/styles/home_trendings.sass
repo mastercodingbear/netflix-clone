@@ -1,0 +1,30 @@
+@import './variables'
+
+.home-trendings-slider-container
+    position: relative
+    top: -300px
+    margin-bottom: -245px
+    width: 100%
+    z-index: 4
+    min-height: 245px
+    .swiper
+        padding: 1rem
+    .slider-title
+        text-transform: capitalize
+        font-size: 1.25rem
+    .home-trendings-slider
+        .swiper-wrapper
+            margin-bottom: 1rem
+            .swiper-slide
+                transition: .2s
+                &:hover
+                    transform: scale(1.1)
+.swiper-scrollbar
+    width: calc( 100% - 30px )
+    left: 15px
+    position: absolute
+    bottom: 0
+    // margin: auto
+    .swiper-scrollbar-drag
+        background: $netflix-red
+        cursor: pointer

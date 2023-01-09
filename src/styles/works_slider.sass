@@ -1,0 +1,71 @@
+@import './variables'
+
+.slider-actions
+    justify-content: space-between
+    .slider-title
+        font-size: 20px
+    .actions-btns-group
+        margin-top: 1.5rem
+        border: 2px solid $netflix-white
+        border-radius: 1000px
+        display: inline-flex
+        position: relative
+        background: $netflix-white
+        button
+            color: $_bg-color
+            border-radius: 1000px
+            padding: 0.4rem 1.6rem
+            text-transform: capitalize
+        .background
+            background: $netflix-red
+            height: 100%
+            width: 99.5px
+            display: block
+            position: absolute
+            left: 0
+            top: 0
+            border-radius: 1000px
+            color: $netflix-white
+            transition: all .5s
+            display: flex
+            justify-content: center
+            align-items: center
+            text-transform: capitalize
+            cursor: pointer
+.works-slider-container
+    padding: 3rem 0
+    .swiper-scrollbar
+        width: 100%
+        position: initial
+        margin: 0
+        margin-bottom: 2rem
+        left: 0
+        bottom: 0
+        .swiper-scrollbar-drag
+            background: $netflix-red
+            cursor: pointer
+.slider-navigation
+    display: flex
+.swiper-button-prev-unique,
+.swiper-button-next-unique
+    border-radius: 20%
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .2s
+    width: 30px
+    height: 30px
+    background: $netflix-red
+    color: $netflix-white
+    cursor: pointer
+    &::after
+        all: unset
+        background: $netflix-red
+        // font-size: 20px
+        font-family: 'Font Awesome 5 Pro'
+        content: "\f053"
+    &:hover
+        box-shadow: 1px 1px 10px $netflix-red
+.swiper-button-next-unique
+    &::after
+        content: "\f054"

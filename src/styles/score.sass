@@ -1,0 +1,25 @@
+@import './variables'
+
+.work-rating
+    z-index: 4
+    position: absolute
+    top: 5px
+    right: 5px    
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    padding: .25rem
+    background: $bg-color
+.circle 
+    stroke-width: 2
+    stroke-linecap: round
+    animation: progress 1s ease-out forwards
+@keyframes progress 
+  0% 
+    stroke-dasharray: 0 100
+.circular-chart .circle 
+    fill: $_bg-color
+.percentage 
+    text-align: center
+    fill: $netflix-white
+    font-size: .65rem

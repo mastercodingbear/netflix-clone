@@ -1,0 +1,112 @@
+@import './variables'
+
+.MovieSerieView
+    display: block
+    color: $netflix-white !important
+    .poster-img-container
+        overflow: hidden
+        position: relative
+        border-radius: .6rem
+        box-shadow: 1px 1px 10px #00000034
+        min-height: 200px
+        .watch-btn
+            z-index: 3
+            position: absolute
+            left: 50%
+            top: 0
+            transform: translate(-50%,-100%)
+            transition: .3s
+            color: $netflix-white
+            i.fa-eye
+                width: 50px
+                height: 50px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+            i
+                display: flex
+                transition: .3s
+                border-radius: 50%
+                &:hover
+                    color: $netflix-white
+                    background: $netflix-red
+
+        .overlay
+            width: 100%
+            height: 100%
+            border-radius: .5rem
+            overflow: hidden
+            z-index: 2
+            background: #00000071
+            position: absolute
+            left: 0
+            top: -250px
+            transition: .3s
+            display: flex
+            justify-content: center
+            align-items: center
+    &:hover
+        .overlay
+            top: 0
+        .watch-btn
+            top: 50%
+            transform: translate(-50%,-50%)
+    .work-poster
+        width: 100%
+        height: 250px
+        object-fit: cover
+        object-position: center
+        border-radius: .5rem
+        z-index: 1
+    .work-info
+        .work-title
+            color: $netflix-white
+            font-size: 1rem
+            line-height: 1.25rem
+            max-height: 2.5rem
+            overflow: hidden
+            margin-bottom: .25rem 
+            margin-top: 1.5rem
+            text-overflow: ellipsis
+        .work-date
+            color: #ffffff56
+    .ribbon-container
+        z-index: 3
+        position: absolute
+        width: 75px
+        height: 75px
+        left: -5px
+        top: 2px
+        overflow: hidden
+        .ribbon
+            text-transform: uppercase
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100px
+            background: $netflix-red
+            position: absolute
+            top: 19px
+            left: -21px
+            transform: rotate(-45deg)
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 100%
+                z-index: -1
+                border-left: 3px solid $netflix-red
+                border-right: 3px solid transparent
+                border-bottom: 3px solid transparent
+                border-top: 3px solid $netflix-red
+            &::after
+                content: ''
+                position: absolute
+                right: 0%
+                top: 100%
+                z-index: -1
+                border-right: 3px solid $netflix-red
+                border-left: 3px solid transparent
+                border-bottom: 3px solid transparent
+                border-top: 3px solid $netflix-red

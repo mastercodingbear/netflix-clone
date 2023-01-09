@@ -1,0 +1,45 @@
+@import './variables'
+
+.trend_slider_view
+    display: block
+    overflow: hidden
+    position: relative
+    .trend_backdrop_img
+        border-radius: .5rem
+        height: 150px
+        width: 100%
+        object-fit: cover
+        object-position: center
+    .work-category
+        left: 7.5px
+        top: 7.5px
+        position: absolute
+        display: flex
+        align-items: center
+        span
+            color: $netflix-white
+            text-transform: uppercase
+            letter-spacing: 2px
+            font-weight: 600
+            text-shadow: 1px 1px 5px #000000b6
+    .work-title
+        color: $netflix-white
+        text-shadow: 1px 1px 2px #000000
+        left: 15px
+        bottom: 7.5px
+        position: absolute
+        padding-right: 15px
+    .work-language
+        display: block
+        right: 7.5px
+        top: 7.5px
+        position: absolute
+        text-transform: uppercase
+        color: $netflix-white
+        background: $netflix-red
+        width: 25px
+        height: 25px
+        text-align: center
+        line-height: 25px
+        font-size: 12px
+        border-radius: .3rem

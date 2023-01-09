@@ -1,0 +1,63 @@
+@import './variables'
+.col-9.results-container .container
+    min-height: 850px
+    position: relative
+    display: flex
+    flex-direction: column
+.works-filter
+    label
+        text-transform: capitalize
+        font-size: 20px
+        padding-bottom: 2rem
+.accordion
+    .accordion-item
+        color: $_bg-color
+        border-color: $netflix-white
+        background: $netflix-white
+        margin: 1rem 0
+        margin-bottom: 2rem
+    .accordion-body
+        .dropdown
+            button
+                width: 100%
+                text-align: left
+                font-size: 14px
+                background: $netflix-white
+                color: $_bg-color
+                padding: 8px 16px
+                border: 0
+                box-shadow: none
+                border: 1px solid #00000075
+                display: flex
+                justify-content: space-between
+                align-items: center
+                &::after
+                    display: none
+            .dropdown-menu
+                z-index: 999
+            .dropdown-item
+                font-size: 14px
+                border: 0
+                background: transparent
+    .accordion-button
+        cursor: initial
+        background: $netflix-red
+        box-shadow: none
+        color: $netflix-white
+        &::after
+            display: none
+        &::before
+            display: none
+.genres
+    .genre-btn
+        border: 1px solid #00000075
+        border-radius: 100px
+        padding: 0.2rem 1rem
+        margin: .25rem 0
+        margin-right: 0.5rem
+        font-size: 13px
+
+    .active
+        border: 1px solid $netflix-red
+        background: $netflix-red
+        color: $netflix-white

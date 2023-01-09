@@ -1,0 +1,120 @@
+@import './variables'
+
+nav
+    z-index: 1000
+    top: 0
+    left: 0
+    width: 100%
+    position: absolute
+    padding: 2rem 0
+    .navbar-right-area,
+    .navbar-left-area 
+        display: flex
+        align-items: center
+    .navbar-left-area
+        .navbar-short-links
+            display: flex
+            .nav-link
+                color: $netflix-white
+                text-transform: capitalize
+                padding: .75rem 1rem
+                border-color: $netflix-red
+            .nav-link.active
+                border-bottom: 4px solid $netflix-red
+                background: linear-gradient(to top,#ffffff2d,#ffffff00) !important
+    .navbar-right-area
+        justify-content: flex-end
+        .login_signup-link
+            text-transform: capitalize
+            color: $netflix-white
+            background: $netflix-red
+            padding: 0.5rem 2.25rem
+            border-radius: 1000px
+            transition: .2s
+            &:hover
+                box-shadow: 1px 1px 10px $netflix-red
+        .navbar-btn
+            font-size: 20px
+            position: relative
+            color: $netflix-white
+        .user-avatar
+            width: 40px
+            height: 40px
+            display: block
+            background: red
+            border-radius: .35rem
+            overflow: hidden
+            .avatar-img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .active
+            top: 2px
+            right: 2px
+            position: absolute
+            display: block
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background: $netflix-red
+            outline: 3px solid $_bg-color
+
+
+.mob-navbar
+    padding: 2rem 0
+    color: $_bg-color
+    position: fixed
+    width: 100%
+    height: 50px
+    bottom: 0
+    left: 0
+    z-index: 1002
+    background: $netflix-white
+    display: flex
+    align-items: center
+    justify-content: space-around
+    box-shadow: 1px 1px 10px #00000021
+
+    .navbar-btn
+        font-size: 20px
+        position: relative
+        color: $_bg-color
+    .user-avatar
+        width: 40px
+        height: 40px
+        display: block
+        background: red
+        border-radius: .35rem
+        overflow: hidden
+        .avatar-img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+
+
+@media screen and ( min-width : (991px) )
+    nav.nav-top-fixed
+        position: fixed
+    nav.invert
+        background: $netflix-white
+        transition: background .3s
+        padding: 0
+        color: $netflix-white
+        box-shadow: 1px 1px 10px #00000021
+        .navbar-left-area
+            .navbar-short-links
+                .nav-link
+                    color: $_bg-color
+                    text-transform: capitalize
+                    padding: 1.25rem 1rem
+                .nav-link.active
+                        border-bottom: 4px solid $netflix-red 
+        .navbar-right-area
+            .navbar-btn
+                color: $_bg-color
+                padding: 0
+            .user-avatar
+            .active
+                background: $netflix-red
+                outline: 3px solid $netflix-white

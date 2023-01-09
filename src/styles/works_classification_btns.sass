@@ -1,0 +1,33 @@
+@import './variables'
+.class-btns-group
+    display: flex
+    flex-direction: row
+    align-items: center 
+    justify-content: flex-start
+    margin-bottom: 2rem
+    overflow: scroll
+    a
+        color: $_bg-color
+        font-weight: 500
+        text-transform: capitalize
+        border: 2px solid $netflix-white
+        border-radius: 1000px
+        padding: 0.3rem 1.25rem
+        margin-right: 1rem
+        transition: all .2s
+        white-space: nowrap
+        background: $netflix-white
+        &:hover
+            color: $netflix-white
+            background: $netflix-red
+            border: 2px solid $netflix-red
+    .current
+        color: $netflix-white
+        background: $netflix-red
+        border: 2px solid $netflix-red
+
+
+@media screen and ( max-width: 991px  )
+    .class-btns-group
+        padding-bottom: 2rem
+    

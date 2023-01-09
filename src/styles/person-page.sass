@@ -1,0 +1,63 @@
+@import './variables'
+
+.person-page
+    padding-top: 150px
+    padding-bottom: 65px
+    background: linear-gradient(#000,#000000aa) ,url('../assets/images/work-bg.jpg')
+    .left-sidebar
+        .person-profile
+            border-radius: .5rem
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .person-socials
+            display: flex
+            a
+                color: $netflix-white
+                font-size: 30px
+                margin-right: 2rem
+    .person-fact
+        margin: 1rem 0
+        label
+            display: block
+            margin-bottom: 0.25rem
+            text-transform: capitalize
+            font-weight: 600
+            font-size: 15px
+        p
+            margin: 0
+    .person-works
+        .person-facts-container
+            .person-fact
+                margin-top:1.5rem
+                margin-right: 1rem
+                width: auto
+                label
+                    word-break: keep-all
+                    text-wrap: nowrap
+                    display: block
+                p
+                    display: block !important
+        .person-name
+            text-transform: uppercase
+        .person-biography
+            margin-top: 0.4rem
+            font-size: 13px
+        .works-container
+            display: flex
+            overflow-x: scroll
+            .MovieSerieView
+                position: relative
+                margin-bottom: 1rem
+                .poster-img-container
+                    width: 150px
+                .work-info,
+                .ribbon-container
+                    display: none
+
+@media screen and ( min-width: 991px )
+    .person-facts-container
+        display: flex
+        justify-content: space-between

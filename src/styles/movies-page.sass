@@ -1,0 +1,54 @@
+@import './variables'
+
+.page-hero-slider
+    .swiper
+        min-height: 500px
+        .swiper-slide
+            min-height: 500px
+            .MovieSerieView 
+                &:hover
+                    .overlay
+                        top: 0
+                .work-poster
+                    height: 325px
+                .overlay
+                    top: -325px
+                .work-title,
+                .work-date
+                    display: none
+            .slide-content
+                margin: 0
+        .swiper-button-prev,
+        .swiper-button-next
+            top: 50%
+.page-main
+    padding: 3rem 0
+    padding-bottom: 0
+    .left-sidebar
+.results-container
+    .container
+        
+        display: flex
+        flex-direction: column
+        .results
+            min-height: 690px
+        .result-view
+            .MovieSerieView
+                position: relative
+                margin-bottom: 2.5rem
+            .work-rating
+            .ribbon-container
+                top: -6px
+
+@media screen and ( min-width: 1200px )
+    .col-xl-2_5
+        width: 20% !important
+
+@media screen and ( max-width: 991px )
+    .page-hero-slider
+        .swiper
+            .swiper-slide
+                min-height: 600px !important
+        .slide-content
+            padding-top: 2rem
+    

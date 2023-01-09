@@ -1,0 +1,20 @@
+{
+  "short_name": "NETFLIX",
+  "name": "netflix clone react js application",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FF2530",
+  "background_color": "#151515"
+}

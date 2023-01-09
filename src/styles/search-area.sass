@@ -1,0 +1,62 @@
+@import './variables'
+
+.search-area
+    padding-top: 113px
+    .search-form
+        form
+            display: flex
+            input
+                width: 100%
+                outline: none
+                border: 0
+            input[type='text']
+                padding:  0 30px
+            a
+                background: $netflix-red
+                color: $netflix-white
+                font-size: 22px
+                padding: .5rem 3rem
+    .cat-body
+        padding: 0
+        .search-filter-list
+            li
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 0.5rem 0
+                margin: 1rem 0 
+                padding-right: 24px
+                padding-left: 24px
+                button
+                    color: $_bg-color
+                    text-transform: capitalize
+                span
+                    letter-spacing: 1px
+                    background: var(--bs-gray-300)
+                    color: var(--bs-gray-700)
+                    padding: 0.25rem .75rem
+                    border-radius: .6rem
+            li
+                &:hover
+                    background: var(--bs-gray-300)
+                    span
+                        background: $netflix-white
+            li.current
+                background: var(--bs-gray-300)
+                span
+                    background: $netflix-white
+                button
+                    font-weight: 600
+
+    .search-results-container
+        .container
+            display: flex
+            flex-direction: column
+            .results
+                min-height: 1000px
+                .result-view
+                    position: relative
+                    .ribbon-container
+                        left: 7px
+                    .work-rating
+                        right: 15px
