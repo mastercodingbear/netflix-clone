@@ -66,6 +66,15 @@ export default function MainMenu() {
               <ul className="social-links">
                 <li>
                   <a
+                    target={"_blank"}
+                    rel="noreferrer noopener"
+                    href="https://discordapp.com/users/920301286233104425"
+                  >
+                    <i className="fab fa-discord"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://github.com/mastercodingbear"
                     target={"_blank"}
                   >
@@ -80,23 +89,14 @@ export default function MainMenu() {
                     <i className="fab fa-skype"></i>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/ren-yoshida/"
-                    target={"_blank"}
-                  >
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </li>
               </ul>
               <p>
                 All rights reserved by
                 <a
                   className="rights"
-                  href="https://bluelotus.vercel.app"
                   target={"_blank"}
                 >
-                  Ren Yoshida
+                  Blue Lotus
                 </a>{" "}
                 © 2022
               </p>
